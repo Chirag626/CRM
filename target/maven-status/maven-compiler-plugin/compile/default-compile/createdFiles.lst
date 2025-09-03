@@ -1,0 +1,4 @@
+com\example\crm\controller\CustomerController.class
+com\example\crm\model\Customer.class
+com\example\crm\repository\CustomerRepository.class
+com\example\crm\CrmApplication.class

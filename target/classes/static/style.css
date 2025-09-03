@@ -1,0 +1,130 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 20px;
+  background: linear-gradient(135deg, #667eea, #764ba2);
+  color: #fff;
+  font-size: 18px;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 36px;
+}
+
+form {
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+input, button {
+  margin: 5px;
+  padding: 10px;
+  border-radius: 10px;
+  border: none;
+  outline: none;
+  font-size: 16px;
+}
+
+input {
+  background: rgba(255, 255, 255, 0.2);
+  color: #fff;
+}
+
+button {
+  background: linear-gradient(90deg, #43e97b, #38f9d7);
+  color: #000;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+button:hover {
+  transform: scale(1.05);
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+li {
+  margin: 10px 0;
+  padding: 15px;
+  border-radius: 15px;
+  background: rgba(255, 255, 255, 0.1);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  backdrop-filter: blur(10px);
+  font-size: 18px;
+}
+
+li span {
+  flex: 1;
+}
+
+li button {
+  margin-left: 10px;
+  padding: 5px 10px;
+  border-radius: 8px;
+}
+
+li button:nth-child(1) {
+  background: linear-gradient(90deg, #43e97b, #38f9d7);
+}
+
+li button:nth-child(2) {
+  background: linear-gradient(90deg, #ff6a6a, #ff3c3c);
+  color: #fff;
+}
+
+/* Modal Styles */
+.modal {
+  display: none; 
+  position: fixed;
+  z-index: 10;
+  left: 0; top: 0;
+  width: 100%; height: 100%;
+  background: rgba(0,0,0,0.6);
+}
+
+.modal-content {
+  background: rgba(255,255,255,0.2);
+  backdrop-filter: blur(12px);
+  margin: 15% auto;
+  padding: 20px;
+  border-radius: 15px;
+  width: 50%;
+  color: #fff;
+  text-align: center;
+  position: relative;
+  font-size: 20px;
+}
+
+#closeModal {
+  position: absolute;
+  top: 10px; right: 20px;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+/* Placeholder Colors */
+input::placeholder {
+  color: #f1f2f6;   /* soft white-grey */
+  opacity: 0.8;     /* thoda halka effect */
+}
+
+/* agar har field ka alag chahiye */
+#name::placeholder {
+  color: #ffeaa7;  /* light yellow */
+}
+#email::placeholder {
+  color: #81ecec;  /* teal */
+}
+#phone::placeholder {
+  color: #fab1a0;  /* peach */
+}
+#notes::placeholder {
+  color: #dfe6e9;  /* soft grey */
+}
